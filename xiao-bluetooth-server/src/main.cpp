@@ -54,7 +54,7 @@ void setup() {
         readings[thisReading] = 0;
     }
 
-    BLEDevice::init("HaoranSensor");
+    BLEDevice::init("welcome");
     pServer = BLEDevice::createServer();
     pServer->setCallbacks(new MyServerCallbacks());
     BLEService *pService = pServer->createService(SERVICE_UUID);
